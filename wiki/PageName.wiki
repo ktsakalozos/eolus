@@ -1,6 +1,4 @@
-#Homepage
-
-= Building OpenNebula based clouds for MaDgIK lab at the University of Athens =
+= Building clouds for the MaDgIK lab =
 
 "Management of Data Information, & Knowledge Group" (MaDgIK
 http://madgik.di.uoa.gr/ ) at the University of Athens focuses on
