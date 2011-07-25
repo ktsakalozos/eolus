@@ -2,7 +2,7 @@
 = Building clouds for the MaDgIK lab =
 
 "Management of Data Information, & Knowledge Group" (MaDgIK
-http://madgik.di.uoa.gr/ ) at the University of Athens focuses on
+http://www.madgik.di.uoa.gr/ ) at the University of Athens focuses on
 several research areas, such as Database and Information Systems,
 Distributed Systems, Query Optimization, and Digital Libraries. During
 the past few years projects within this group started offering and
