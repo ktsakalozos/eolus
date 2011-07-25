@@ -1,0 +1,81 @@
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Nephele Login</title>
+  <style>
+body {
+	font-family: Calibri;
+	font-size: 16px;
+	background: #3e4d57;
+	margin: 13% 0 0 0;
+}
+
+h1 {
+	color: #a2bacc;
+	margin: 0 0 50px 28%;
+	font-size: 30;
+}
+
+.lorida {
+	background: #455560;
+	height: 127px;
+}
+
+.moutzoura {
+	width: 35%;
+	height: 127px;
+	float: left;
+}
+
+.lock {
+	width: 100px;
+	height: 100px;
+}
+
+.title {
+	color: #78d4fe;
+}
+
+.koumpi {
+	margin-left: 35%;
+}
+
+.koumpi input {
+	margin-left: 210px;
+}
+
+a:link,
+a:visited,
+a:active {
+	color: #6b98a8;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+  </style>
+</head>
+<body>
+  <h1>Please Authenticate:</h1>
+    <div class="lorida">
+    <form method="POST" action="j_security_check">
+      <div class="moutzoura"></div>
+      <div class="kleidaria"></div>
+      <table cellspacing="20px">
+        <tr>
+          <td class="title">User Name:</td>
+          <td><input type="text" name="j_username" /></td>
+          <td class="lock" rowspan="3"></td>
+        </tr>
+        <tr>
+          <td class="title">Password:</td>
+          <td><input type="password" name="j_password" /></td>
+        </tr>
+        <tr><td></td><td></td></tr>
+      </table>
+      <span class="koumpi">
+        <input type="submit" value="Login" />
+      </span>
+  </form>
+  </div>
+</body>

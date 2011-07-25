@@ -1,0 +1,136 @@
+.tablecell {
+	border: solid #d3e5ed;
+	border-width: 0 1px 1px 0;
+	font-weight:normal;
+	color:black;
+	font-size: 13px;
+	padding: 0 12px;
+ 	text-align: left;
+	line-height: 26px;
+}
+
+.cell_head {
+	font-weight: bold;
+	font-size: 14px;
+	color: #1f476f;
+	background: #e7f3f8;
+}
+
+.cell_first {
+	background: #fefefe url(layout/site/tables/td_bg1.gif) repeat-x;
+}
+
+.cell_second {
+	background: #f3f9fb url(layout/site/tables/td_bg2.gif) repeat-x;
+}
+
+.vm_action {
+	float: left;
+	margin: 0 0 0 13px;
+	padding: 0;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+}
+
+.action {
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 0;
+	cursor: pointer;
+	width: 14px;
+	height: 14px;
+}
+
+.action_modify_user {
+	background-image:url(layout/site/tables/action11.png);
+}
+
+.action_delete_user {
+	width: 10px;
+	background-image:url(layout/site/tables/action12.png);
+}
+
+.action_move_temp {
+	background-image:url(layout/site/tables/action13.png);
+}
+
+.action_copy_temp {
+	background-image:url(layout/site/tables/action14.png);
+}
+
+.action_del_temp {
+	background-image:url(layout/site/tables/action15.png);
+}
+
+.action_make_temp_pub {
+	width: 18px;
+	background-image:url(layout/site/tables/action16.png);
+}
+
+.action_kill_vm {
+	background-image:url(layout/site/tables/action17.png);
+}
+
+.action_poweroff_vm {
+	background-image:url(layout/site/tables/action15.png);
+}
+
+.action_pause_vm {
+	background-image:url(layout/site/tables/action18.png);
+}
+
+.action_resume_vm {
+	background-image:url(layout/site/tables/action19.png);
+}
+
+.action_vm_info {
+	background-image:url(layout/site/tables/action20.png);
+}
+
+.action_migrate_vm {
+	background-image:url(layout/site/tables/action3.gif);
+}
+
+.action_temp_from_vm {
+	background-image:url(layout/site/tables/action21.png);
+}
+
+.action_run {
+	width: 12px;
+	background-image:url(layout/site/tables/action22.png);
+}
+
+.action_assign_vm {
+	width: 16px;
+	background-image:url(layout/site/tables/action23.png);
+}
+
+.action_enable {
+	background-image:url(layout/site/tables/action24.png);
+}
+
+.action_disable {
+	background-image:url(layout/site/tables/action25.png);
+}
+
+
+.table_list {
+	border: solid #d3e5ed;
+	border-width: 0 1px 1px 0;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 11px;
+	text-align: left;
+	padding: 0 0;
+	line-height: 26px;
+}
+
+.table_list_head {
+	font-weight: bold;
+	font-size: 13px;
+	color: #1f476f;
+	background: #e7f3f8;
+}
+/* end tables */
+
