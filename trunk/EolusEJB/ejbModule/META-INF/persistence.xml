@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+<!-- 	<persistence-unit name="NephelePU" transaction-type="RESOURCE_LOCAL">
+		<non-jta-data-source>java:/DefaultDS</non-jta-data-source>
+		 -->
+	<persistence-unit name="EolusPU">
+		<jta-data-source>java:/DefaultDS</jta-data-source>
+		<class>org.uoa.eolus.config.ONEInfo</class>
+		<class>org.uoa.eolus.script.Script</class>
+		<class>org.uoa.eolus.script.ScriptRepo</class>
+		<class>org.uoa.eolus.template.Template</class>
+		<class>org.uoa.eolus.template.TemplateGenie</class>
+		<class>org.uoa.eolus.template.TemplatesRepo</class>
+		<class>org.uoa.eolus.vm.VirtualMachine</class>
+		<class>org.uoa.eolus.host.Host</class>
+		<class>org.uoa.eolus.host.Connectivity</class>
+		<class>org.uoa.eolus.host.Site</class>
+		<class>org.uoa.eolus.user.User</class>
+		<class>org.uoa.nefeli.TaskflowEntry</class>
+		<class>org.uoa.nefeli.Signal</class>
+		<properties>
+<!--  			<property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver" />
+			<property name="hibernate.connection.url" value="jdbc:hsqldb:." />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect" />
+			-->
+			<property name="hibernate.archive.autodetection" value="class" /> 
+  			<property name="hibernate.hbm2ddl.auto" value="true" />      
+<!-- 			<property name="hibernate.hbm2ddl.auto" value="create-drop" /> --> 
+ 			<property name="hibernate.hbm2ddl.auto" value="update" />   
+		</properties>
+	</persistence-unit>
+</persistence>
