@@ -1,0 +1,140 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="EolusUI.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Eolus Administration Panel</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="eolusui/eolusui.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+    <div id="head">
+      <div id="logo_user_details">
+        <h1 id="logo"><a href="#home">websitename Administration Panel</a></h1>
+        <div id="user_details">
+          <ul id="user_details_menu">
+            <li id="username"></li>
+            <li>
+              <ul id="user_access">
+           <!-- <li class="first"><a href="#">My account</a></li> -->
+		   <!-- <li class="last"><a href="#Logout">Log out</a></li>  -->   
+		        <li class="last"></li>   
+              </ul>
+            </li>
+            <li><a class="new_messages" href="#"><!--4 new messages--></a></li>
+          </ul>
+          <div id="server_details">
+            <dl>
+              <dt>Server time :</dt>
+              <dd id="time"></dd>
+            </dl>
+            <dl>
+              <dt>Your ip :</dt>
+              <dd id="ip"></dd>
+            </dl>
+          </div> <!--server_details -->
+        </div> <!--user_details -->
+      </div> <!--logo_user_details-->			
+        
+      <div id="menus_wrapper">
+        <div id="main_menu">
+          <ul>
+            <li><a href="#UsersManagment" id="tab1"><span><span>Users</span></span></a></li>
+            <li><a href="#VmsManagment" id="tab2"><span><span>Virual Machines</span></span></a></li>
+            <li><a href="#TemplatesManagment" id="tab3"><span><span>Templates</span></span></a></li>
+            <li><a href="#ScriptManagment" id="tab4"><span><span>Scripts</span></span></a></li>
+            <li><a href="#HostsManagment" id="tab5"><span><span>Hosts</span></span></a></li>
+            <li class="last"><a href="#PendingJobs" id="tab6"><span><span>Pending Jobs</span></span></a></li>
+          </ul>
+        </div> <!--main_menu -->
+      </div> <!--menus_wrapper -->
+    </div> <!--head -->
+
+
+    <div id="content">
+      <div id="page">
+        <div class="inner">
+          <div id="Dashboard" class="section"></div>
+          <div id="UsersDashboard" class="section"></div>
+          <div id="TemplatesDashboard" class="section"></div>
+          <div id="VmsDashboard" class="section"></div>
+          <div id="ScriptsDashboard" class="section"></div>
+          <div id="HostsDashboard" class="section"></div>
+          <div id="AddUserTable" class="section"></div>
+          <div id="ModifyUserTable" class="section"></div>
+          <div id="DeleteUserTable" class="section"></div>
+          <div id="CreateVmTable" class="section"></div>
+          <div id="RunCommandTable" class="section"></div>
+          <div id="UploadScriptTable" class="section"></div>
+          <div id="CreateHostTable" class="section"></div>
+          
+          <div id="PendingJobsTable" class="section table_section"></div>
+          <div id="ListHostsTable" class="section table_section"></div>
+          <div id="ListUsersTable" class="section table_section"></div>
+          <div id="VmsTable" class="section table_section"></div>
+          <div id="ScriptsTable" class="section table_section"></div>
+          <div id="TemplatesTable" class="section table_section"></div>
+          
+          <!--<div id="" class="section"></div>-->
+        </div> <!--inner -->
+      </div> <!--page -->
+        
+      <div id="sidebar">
+        <div class="inner">
+          <div id="IndexSidebar" class="section"></div>
+          <div id="UsersSidebar" class="section"></div>
+          <div id="VmsSidebar" class="section"></div>
+          <div id="TemplatesSidebar" class="section"></div>
+          <div id="ScriptsSidebar" class="section"></div>
+          <div id="HostsSidebar" class="section"></div>
+          <div id="NetworkSidebar" class="section"></div>
+          <div id="todolist" class="section"></div>
+          <div id="info"></div>
+        </div>
+      </div> <!--sidebar -->
+    </div> <!--content -->
+    
+    <div id="wrapper"></div>
+    
+    <div id="EntityManager"></div>
+    
+    
+  </body>
+</html>

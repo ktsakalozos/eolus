@@ -1,0 +1,59 @@
+/* start pagination */
+.pagination {
+	margin: 8px 0 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 21px;
+	color: #444;
+	font-size: 12px;
+}
+
+.page_no {
+	float: left;
+	color: #444;
+	font-size: 12px;
+	white-space: nowrap;
+	display: block;
+	padding: 0 0 0 10px;
+}
+
+.pag_list {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+.page_counter{
+	color: #406f85;
+	float: left;
+	padding: 0 5px;
+	font-weight: bold;
+}
+
+.current_page {
+  color: #fff;
+	background: #96b7c5 url(layout/site/tables/current_page_middle.gif) repeat-x;
+	display: block;
+	line-height: 17px;
+	margin: 2px 0 0 0;
+}
+
+.current_page span {
+	display: block;
+	background:url(layout/site/tables/current_page_left.gif) no-repeat;
+}
+
+.current_page span span {
+	background:url(layout/site/tables/current_page_right.gif) no-repeat right center;
+	padding: 0 5px;
+}
+
+.page_btn {
+	margin: 0 12px;
+}
+
+/* end pagination */
+
